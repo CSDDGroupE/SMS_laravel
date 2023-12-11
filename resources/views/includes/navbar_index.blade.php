@@ -47,8 +47,8 @@
                         <a href="/blogs" class="nav-item nav-link">Blogs</a>
                     </div>
                     @auth
-                        <a href="/profile" class="nav-item nav-link">Profile</a>
-                        <a href="/logout" class="nav-item nav-link">Logout</a>
+                        <a href="/groups/create" class="nav-item nav-link">Groups</a>
+                        <a href="/logout" class="nav-item nav-link">Logout</a>    
                     @else
                         <a href="/login" class="nav-item nav-link">Login</a>
                         <a href="/register" class="nav-item nav-link">Register</a>

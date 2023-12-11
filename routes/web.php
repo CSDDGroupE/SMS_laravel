@@ -95,3 +95,13 @@ Route::get('/jackets',[CategoryController::class,'jackets']);
 Route::get('/accerssories',[CategoryController::class,'accerssories']);
 Route::get('/bags',[CategoryController::class,'bags']);
 
+
+// routes/web.php
+
+Route::get('/groups/create', 'GroupController@create')->name('groups.create');
+Route::post('/groups/store', 'GroupController@store')->name('groups.store');
+Route::get('/groups/join'  , 'GroupController@joinForm')->name('groups.joinForm');
+Route::post('/groups/{group}/join', 'GroupController@join')->name('groups.join');
+
+Route::post('/shop', 'ProductController@showProducts')->name('shop');
+
